@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Kaushan+Script&family=Poppins&family=Space+Mono&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #242425;
+}
+
+.container {
+  width: 80%;
+  max-width: 500px;
+  padding: 25px 35px;
+  background: #fff;
+  margin: 150px auto;
+  border-radius: 10px;
+}
+
+.container p {
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.container input {
+  width: 100%;
+  height: 50px;
+  border: 1px solid #232325;
+  border-radius: 10px;
+  margin: 10px 0 20px;
+  outline: 0;
+  padding: 10px;
+}
+
+.container button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  outline: 0;
+  background: #12ff40;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  margin: 10px 0;
+  font-weight: 500;
+  border: 0;
+}
+
+
+#img-box{
+  width: 40%;
+  margin:0 auto;
+  border-radius: 10px;
+  background: #232323;
+  transition: max-height 1.5s ease-out;
+}
+
+#img-box img{
+  padding: 10px;
+  display: block;
+}
+
+#img-box.show-img{
+  max-height: 300px;
+  margin: 10px auto;
+  border: 1px solid #d1d1d1;
+}
+
+.error{
+  animation: shake 0.1s linear 10;
+}
+
+@keyframes shake {
+  0%{
+    transform: translateX(0);
+  }
+
+  25%{
+    transform: translateX(-2px);
+  }
+  50%{
+    transform: translateX(0);
+  }
+  75%{
+    transform: translateX(2px);
+  }
+
+  100%{
+    transform: translateX(0);
+  }
+}
